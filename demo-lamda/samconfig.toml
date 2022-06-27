@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "firststacklamda"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-12q1eqnpuoird"
+s3_prefix = "firststacklamda"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

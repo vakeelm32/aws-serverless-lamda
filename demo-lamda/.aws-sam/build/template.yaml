@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'demo-lamda
+
+  Sample SAM Template for demo-lamda
+
+  '
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.DataTypes::getOutput
+      Runtime: java11
+      Architectures:
+      - x86_64
+      MemorySize: 512
+      Timeout: 6
+      Environment:
+        Variables:
+          restapiurl: testurl
+    Metadata:
+      SamResourceId: HelloWorldFunction
